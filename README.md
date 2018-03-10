@@ -9,7 +9,7 @@
 ## Setup/Installation requirements
 
 * In order to utilize this project you will need a terminal application such as Terminal or Bash, and a text editor application such as Atom or Eclipse.
-* Start by opening the terminal application and typing the command "git clone https://github.com/RAAllen/MakeChange.git" after navigating with the "cd" command to the location you would like the project to be cloned into.
+* Start by opening the terminal application and typing the command "git clone https://github.com/RAAllen/Jets.git" after navigating with the "cd" command to the location you would like the project to be cloned into.
 * Use the terminal application to navigate to the project directory you just cloned down off of GitHub using the "cd" command.
 * In order to run this program, type "java Jets" while in the project directory.
 * If that does not work, check to make sure a compiled version of the project is in the directory by typing "ls". You should see a Jets.class file.
@@ -19,10 +19,12 @@
 
 ## Program Specifications
 
-*
-*
-*
-    * 
+* The user will be able to see a list of all the jets in the fleet that includes specifications of each individual jet.
+* The user will be able to "fly" the jets to see how long it can fly until it runs out of fuel.
+* The user will be able to compare jet speeds in order to see which jet is the fastest.
+* The user will be able to compare jet max distance ranges in order to see which jet can fly the farthest.
+* The user will be able to !!!!!!!!!!!! -fill in later- !!!!!!!!!!!!!!!
+* The user will be able to add new jets to the fleet.
 
 ## Support and Contact Details
 
