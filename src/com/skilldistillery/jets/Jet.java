@@ -1,4 +1,4 @@
-package Jets;
+package com.skilldistillery.jets;
 
 public abstract class Jet {
 	private String model;
