@@ -29,7 +29,39 @@ public class Airfield {
 	
 	public void printJets() {
 		for (int i = 0; i < jets.length; i++) {
-			jets[i].toString();
+			if (jets[i] != null) {
+				jets[i].toString();
+			}
+		}
+	}
+	
+	public void flyAll() {
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
+				jets[i].fly(i, i);
+			}
+		}
+	}
+	
+	public void getFastestJet() {
+		Jet fastestJet = jets[0];
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
+				if (jets[i].getSpeed() > fastestJet.getSpeed()) {
+					fastestJet = jets[i];
+				}
+			}
+		}
+	}
+	
+	public void getLongestRange() {
+		Jet longestRangedJet = jets[0];
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
+				if (jets[i].getRange() > longestRangedJet.getRange()) {
+					longestRangedJet = jets[i];
+				}
+			}
 		}
 	}
 
