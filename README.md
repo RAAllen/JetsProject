@@ -15,10 +15,12 @@
 * If that does not work, check to make sure a compiled version of the project is in the directory by typing "ls". You should see a Jets.class file.
 * If no Jets.class file exists, create one by compiling the program with the command "javac Jets.java". Then try running it again.
 * To edit this program, after navigating into the project directory type the following commands:
-    1. _"atom .". If you are using atom. This should open the project in your editor._
+    1. _"atom .". If you are using Atom. This should open the project in your editor._
+    2. _"open /Applications/eclipse.app". If you are using Eclipse. This will open the Eclipse editor. You must then open the specific project from within the Eclipse file interface._
 
 ## Program Specifications
 
+* The user will be prompted with a menu of options that allow them to interact with their jet fleet.
 * The user will be able to see a list of all the jets in the fleet that includes specifications of each individual jet.
 * The user will be able to "fly" the jets to see how long it can fly until it runs out of fuel.
 * The user will be able to compare jet speeds in order to see which jet is the fastest.
