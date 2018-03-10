@@ -23,7 +23,10 @@
 * The user will be able to "fly" the jets to see how long it can fly until it runs out of fuel.
 * The user will be able to compare jet speeds in order to see which jet is the fastest.
 * The user will be able to compare jet max distance ranges in order to see which jet can fly the farthest.
-* The user will be able to !!!!!!!!!!!! -fill in later- !!!!!!!!!!!!!!!
+* The user will be able to load the cargo planes to find out how much cargo they can hold.
+* The user will be able to ready the guns of the fighter jets to find out what their shots per minute is.
+* The user will be able to load passengers on the passenger plane to find out how many people they can transport.
+* The user will be able to send a skywriting message to find out the maximum number of characters a skywriter can write.
 * The user will be able to add new jets to the fleet.
 
 ## Support and Contact Details

@@ -12,7 +12,7 @@ public class SkyWriter extends Jet {
 		this.numberOfLetters = numberOfLetters;
 	}
 	
-	public void getMaxMessageLength() {
+	public void sendSkyMessage() {
 		System.out.println("This Skywriting Jet can print out a message with a maximum length of " + numberOfLetters + " characters.");
 	}
 
