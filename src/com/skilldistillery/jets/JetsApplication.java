@@ -17,7 +17,7 @@ public class JetsApplication {
 		System.out.println("Welcome to the Airfield!");
 		displayUserMenu();
 		int userChoice = scanner.nextInt();
-		while (userChoice != 10) {
+		do {
 			if (userChoice == 1) {
 				airfield.printJets();
 			} else if (userChoice == 2) {
@@ -39,7 +39,7 @@ public class JetsApplication {
 			} else {
 				System.err.println("It would appear you made an incorrect selection, please choose again.");
 			}
-		}
+		} while (userChoice != 10);
 		System.out.println("Goodbye!");
 	}
 

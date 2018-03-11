@@ -30,7 +30,7 @@ public class Airfield {
 	public void printJets() {
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] != null) {
-				jets[i].toString();
+				System.out.println(jets[i].toString());
 			}
 		}
 	}
@@ -52,6 +52,7 @@ public class Airfield {
 				}
 			}
 		}
+		System.out.println(fastestJet.toString());
 	}
 	
 	public void getLongestRange() {
@@ -63,6 +64,7 @@ public class Airfield {
 				}
 			}
 		}
+		System.out.println(longestRangedJet.toString());
 	}
 
 	public Jet[] getJets() {
