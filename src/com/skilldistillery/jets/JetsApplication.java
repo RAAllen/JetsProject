@@ -43,7 +43,7 @@ public class JetsApplication {
 			airfield.writeAllSkyWriters();
 			run();
 		} else if (userChoice == 9) {
-//			airfield.addJet();
+			airfield.addJet();
 			run();
 		} else if (userChoice == 10) {
 			System.out.println("Goodbye!");

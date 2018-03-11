@@ -1,7 +1,9 @@
 package com.skilldistillery.jets;
 
+import java.util.Scanner;
+
 public class Airfield {
-	private Jet[] jets = new Jet[15];
+	private Jet[] jets = new Jet[25];
 
 	public Airfield() {
 		JetImpl ji1 = new JetImpl("Cessna 172", 175, 801, 307_500);
@@ -92,7 +94,7 @@ public class Airfield {
 			}
 		}
 	}
-	
+
 	public void loadAllPassengerPlanes() {
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] != null) {
@@ -104,7 +106,7 @@ public class Airfield {
 			}
 		}
 	}
-	
+
 	public void writeAllSkyWriters() {
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] != null) {
@@ -116,15 +118,31 @@ public class Airfield {
 			}
 		}
 	}
-	
-	public void addJet(Jet newJet) {
+
+	public void addJet() {
+		Scanner scanner = new Scanner(System.in);
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] == null) {
-				jets[i] = newJet;
+				Jet newJet = new JetImpl();
+				System.out.println("Please enter the model of the jet you would like to add: ");
+				String model = scanner.next();
+				newJet.setModel(model);
+				System.out.println("Please enter the speed of the jet you would like to add: ");
+				Double speed = scanner.nextDouble();
+				newJet.setSpeed(speed);
+				System.out.println("Please enter the range of the jet you would like to add: ");
+				int range = scanner.nextInt();
+				newJet.setRange(range);
+				System.out.println("Please enter the price of the jet you would like to add: ");
+				Long price = scanner.nextLong();
+				newJet.setPrice(price);
+				System.out.println("Successfully added jet to fleet: ");
+				System.out.println(newJet.toString());
 			}
 		}
+		scanner.close();
 	}
-	
+
 	public Jet[] getJets() {
 		return jets;
 	}
