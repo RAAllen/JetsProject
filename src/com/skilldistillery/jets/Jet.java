@@ -23,7 +23,7 @@ public abstract class Jet {
 		double speedInMach = getSpeedInMach(speed);
 		toString();
 		System.out.println("This Jet can fly " + maxDistance + " hours before running out of fuel.");
-		System.out.println("This Jet can fly at " + speedInMach + " Mach Speed.");
+		System.out.println("This Jet can fly at Mach " + speedInMach + " Speed.");
 	}
 	
 	public double getSpeedInMach(double speed) {

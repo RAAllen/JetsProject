@@ -14,7 +14,7 @@ public class Airfield {
 		PassengerPlane pp2 = new PassengerPlane("Airbus A380", 561, 9445, 445_600_000, 546);
 		SkyWriter sw1 = new SkyWriter("Cessna 172", 175, 801, 307_500, 100);
 		SkyWriter sw2 = new SkyWriter("Feiseler Fi 56", 109, 236, 1_000_000_000, 50);
-	
+
 		jets[0] = ji1;
 		jets[1] = ji2;
 		jets[2] = cp1;
@@ -24,9 +24,9 @@ public class Airfield {
 		jets[6] = pp1;
 		jets[7] = pp2;
 		jets[8] = sw1;
-		jets[9] = sw2;		
+		jets[9] = sw2;
 	}
-	
+
 	public void printJets() {
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] != null) {
@@ -34,7 +34,7 @@ public class Airfield {
 			}
 		}
 	}
-	
+
 	public void flyAll() {
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] != null) {
@@ -42,7 +42,7 @@ public class Airfield {
 			}
 		}
 	}
-	
+
 	public void getFastestJet() {
 		Jet fastestJet = jets[0];
 		for (int i = 0; i < jets.length; i++) {
@@ -54,7 +54,7 @@ public class Airfield {
 		}
 		System.out.println(fastestJet.toString());
 	}
-	
+
 	public void getLongestRange() {
 		Jet longestRangedJet = jets[0];
 		for (int i = 0; i < jets.length; i++) {
@@ -67,6 +67,50 @@ public class Airfield {
 		System.out.println(longestRangedJet.toString());
 	}
 
+	public void loadAllCargoPlanes() {
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
+				jets[i].getClass();
+				if (jets[i].getClass() == CargoPlane.class) {
+					System.out.println(jets[i].toString());
+				}
+			}
+		}
+	}
+
+	public void dogfight() {
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
+				jets[i].getClass();
+				if (jets[i].getClass() == FighterJet.class) {
+					System.out.println(jets[i].toString());
+				}
+			}
+		}
+	}
+	
+	public void loadAllPassengerPlanes() {
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
+				jets[i].getClass();
+				if (jets[i].getClass() == PassengerPlane.class) {
+					System.out.println(jets[i].toString());
+				}
+			}
+		}
+	}
+	
+	public void writeAllSkyWriters() {
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
+				jets[i].getClass();
+				if (jets[i].getClass() == SkyWriter.class) {
+					System.out.println(jets[i].toString());
+				}
+			}
+		}
+	}
+	
 	public Jet[] getJets() {
 		return jets;
 	}
@@ -74,5 +118,5 @@ public class Airfield {
 	public void setJets(Jet[] jets) {
 		this.jets = jets;
 	}
-	
+
 }

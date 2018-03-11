@@ -17,7 +17,7 @@ public class JetsApplication {
 		System.out.println("Welcome to the Airfield!");
 		displayUserMenu();
 		int userChoice = scanner.nextInt();
-		do {
+		 while (userChoice != 10) {
 			if (userChoice == 1) {
 				airfield.printJets();
 			} else if (userChoice == 2) {
@@ -27,19 +27,19 @@ public class JetsApplication {
 			} else if (userChoice == 4) {
 				airfield.getLongestRange();
 			} else if (userChoice == 5) {
-
+				airfield.loadAllCargoPlanes();
 			} else if (userChoice == 6) {
-
+				airfield.dogfight();
 			} else if (userChoice == 7) {
-
+				airfield.loadAllPassengerPlanes();
 			} else if (userChoice == 8) {
-
+				airfield.writeAllSkyWriters();
 			} else if (userChoice == 9) {
 
 			} else {
 				System.err.println("It would appear you made an incorrect selection, please choose again.");
 			}
-		} while (userChoice != 10);
+		}
 		System.out.println("Goodbye!");
 	}
 
