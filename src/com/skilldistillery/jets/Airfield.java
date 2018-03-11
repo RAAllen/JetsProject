@@ -1,7 +1,7 @@
 package com.skilldistillery.jets;
 
 public class Airfield {
-	private Jet[] jets = new Jet[100];
+	private Jet[] jets = new Jet[15];
 
 	public Airfield() {
 		JetImpl ji1 = new JetImpl("Cessna 172", 175, 801, 307_500);
@@ -52,7 +52,8 @@ public class Airfield {
 				}
 			}
 		}
-		System.out.println(fastestJet.toString());
+		System.out.print("The Fastest Jet: ");
+		System.out.print(fastestJet.toString());
 	}
 
 	public void getLongestRange() {
@@ -64,7 +65,8 @@ public class Airfield {
 				}
 			}
 		}
-		System.out.println(longestRangedJet.toString());
+		System.out.print("The Jet with the Longest Range: ");
+		System.out.print(longestRangedJet.toString());
 	}
 
 	public void loadAllCargoPlanes() {
@@ -73,6 +75,7 @@ public class Airfield {
 				jets[i].getClass();
 				if (jets[i].getClass() == CargoPlane.class) {
 					System.out.println(jets[i].toString());
+					((CargoPlane) jets[i]).loadCargo();
 				}
 			}
 		}
@@ -84,6 +87,7 @@ public class Airfield {
 				jets[i].getClass();
 				if (jets[i].getClass() == FighterJet.class) {
 					System.out.println(jets[i].toString());
+					((FighterJet) jets[i]).readyGuns();
 				}
 			}
 		}
@@ -95,6 +99,7 @@ public class Airfield {
 				jets[i].getClass();
 				if (jets[i].getClass() == PassengerPlane.class) {
 					System.out.println(jets[i].toString());
+					((PassengerPlane) jets[i]).loadPassengers();
 				}
 			}
 		}
@@ -106,7 +111,16 @@ public class Airfield {
 				jets[i].getClass();
 				if (jets[i].getClass() == SkyWriter.class) {
 					System.out.println(jets[i].toString());
+					((SkyWriter) jets[i]).sendSkyMessage();
 				}
+			}
+		}
+	}
+	
+	public void addJet(Jet newJet) {
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] == null) {
+				jets[i] = newJet;
 			}
 		}
 	}

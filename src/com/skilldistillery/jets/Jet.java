@@ -21,7 +21,7 @@ public abstract class Jet {
 	public void fly(double speed, int range) {
 		double maxDistance = (range / speed);
 		double speedInMach = getSpeedInMach(speed);
-		toString();
+		System.out.println(toString());
 		System.out.println("This Jet can fly " + maxDistance + " hours before running out of fuel.");
 		System.out.println("This Jet can fly at Mach " + speedInMach + " Speed.");
 	}
