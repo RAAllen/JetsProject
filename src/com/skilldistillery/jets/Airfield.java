@@ -38,7 +38,7 @@ public class Airfield {
 	public void flyAll() {
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] != null) {
-				jets[i].fly(i, i);
+				jets[i].fly(jets[i].getSpeed(), jets[i].getRange());
 			}
 		}
 	}
