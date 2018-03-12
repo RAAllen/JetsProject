@@ -118,29 +118,31 @@ public class Airfield {
 			}
 		}
 	}
-
+	
 	public void addJet() {
 		Scanner scanner = new Scanner(System.in);
+		int newJetIndex = 0;
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] == null) {
-				Jet newJet = new JetImpl();
-				System.out.println("Please enter the model of the jet you would like to add: ");
-				String model = scanner.next();
-				newJet.setModel(model);
-				System.out.println("Please enter the speed of the jet you would like to add: ");
-				Double speed = scanner.nextDouble();
-				newJet.setSpeed(speed);
-				System.out.println("Please enter the range of the jet you would like to add: ");
-				int range = scanner.nextInt();
-				newJet.setRange(range);
-				System.out.println("Please enter the price of the jet you would like to add: ");
-				Long price = scanner.nextLong();
-				newJet.setPrice(price);
-				System.out.println("Successfully added jet to fleet: ");
-				System.out.println(newJet.toString());
-			}
+				newJetIndex = i;
+			} 
 		}
-		scanner.close();
+		Jet newJet = new JetImpl();
+		jets[newJetIndex] = newJet;
+		System.out.println("Please enter the model of the jet you would like to add: ");
+		String model = scanner.next();
+		newJet.setModel(model);
+		System.out.println("Please enter the speed of the jet you would like to add: ");
+		Double speed = scanner.nextDouble();
+		newJet.setSpeed(speed);
+		System.out.println("Please enter the range of the jet you would like to add: ");
+		int range = scanner.nextInt();
+		newJet.setRange(range);
+		System.out.println("Please enter the price of the jet you would like to add: ");
+		Long price = scanner.nextLong();
+		newJet.setPrice(price);
+		System.out.println("Successfully added jet to fleet: ");
+		System.out.println(newJet.toString());
 	}
 
 	public Jet[] getJets() {

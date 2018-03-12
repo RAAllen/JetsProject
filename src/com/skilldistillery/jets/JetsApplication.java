@@ -68,6 +68,7 @@ public class JetsApplication {
 		System.out.println("   *     10. Quit                                  *");
 		System.out.println("   *                                               *");
 		System.out.println("   * * * * * * * * * * * * * * * * * * * * * * * * *\n");
+		System.out.println("");
 	}
 
 	public Airfield getAirfield() {

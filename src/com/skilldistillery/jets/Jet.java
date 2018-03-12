@@ -21,9 +21,9 @@ public abstract class Jet {
 	public void fly(double speed, int range) {
 		double maxDistance = (range / speed);
 		double speedInMach = getSpeedInMach(speed);
-		System.out.println(toString());
-		System.out.println("This Jet can fly " + maxDistance + " hours before running out of fuel.");
-		System.out.println("This Jet can fly at Mach " + speedInMach + " Speed.");
+		System.out.println(model + ": ");
+		System.out.println(maxDistance + " hours of fuel.");
+		System.out.println("Mach " + speedInMach + " Speed.\n");
 	}
 	
 	public double getSpeedInMach(double speed) {
@@ -33,7 +33,7 @@ public abstract class Jet {
 	
 	@Override
 	public String toString() {
-		return "\nJet [model=" + model + ", speed=" + speed + ", range=" + range + ", price=" + price + "]";
+		return "\nmodel : " + model + "\nspeed : " + speed + "\nrange : " + range + "\nprice : " + price;
 	}
 
 	public String getModel() {
