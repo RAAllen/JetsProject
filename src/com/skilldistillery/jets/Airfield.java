@@ -143,8 +143,8 @@ public class Airfield {
 		System.out.println("Enter the price of the jet: ");
 		Long price = scanner.nextLong();
 		newJet.setPrice(price);
-		System.out.println("Successfully added jet to fleet: ");
-		System.out.println(newJet.toString());
+		System.out.println("\nSuccessfully added jet to fleet: ");
+		System.out.print(newJet.toString());
 	}
 
 	public Jet[] getJets() {
