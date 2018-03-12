@@ -50,6 +50,7 @@ public class JetsApplication {
 		} else {
 			System.err.println("It would appear you made an incorrect selection, please choose again.");
 		}
+		scanner.close();
 	}
 
 	private static void displayUserMenu() {
